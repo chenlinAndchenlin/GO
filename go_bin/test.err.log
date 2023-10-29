@@ -1,1 +1,0 @@
-2023-10-27T22:03:39.684+0800	ERROR	gin_zap/main.go:88	Error fetching URL www.sogo.com : Error = Get "www.sogo.com": unsupported protocol scheme ""
