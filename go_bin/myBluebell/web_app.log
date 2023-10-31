@@ -1,0 +1,52 @@
+{"level":"INFO","time":"2023-10-30T11:14:49.511+0800","caller":"myBluebell/main.go:83","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-10-30T11:14:49.511+0800","caller":"myBluebell/main.go:92","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-10-30T11:29:47.741+0800","caller":"myBluebell/main.go:37","msg":"logger initialized successfully..."}
+{"level":"ERROR","time":"2023-10-30T11:29:57.949+0800","caller":"controller/user.go:27","msg":"singup with invalid param","error":"json: cannot unmarshal number into Go struct field ParamSignUp.re_password of type string"}
+{"level":"INFO","time":"2023-10-30T11:29:57.949+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0}
+{"level":"ERROR","time":"2023-10-30T11:30:04.574+0800","caller":"controller/user.go:27","msg":"singup with invalid param","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2023-10-30T11:30:04.574+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-10-30T11:30:22.866+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0002127}
+{"level":"INFO","time":"2023-10-30T11:32:44.515+0800","caller":"myBluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-10-30T11:32:44.515+0800","caller":"myBluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-10-30T11:32:50.297+0800","caller":"myBluebell/main.go:37","msg":"logger initialized successfully..."}
+{"level":"ERROR","time":"2023-10-30T11:33:03.888+0800","caller":"controller/user.go:27","msg":"singup with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'required' tag"}
+{"level":"INFO","time":"2023-10-30T11:33:03.888+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0005021}
+{"level":"INFO","time":"2023-10-30T11:35:34.350+0800","caller":"myBluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-10-30T11:35:34.350+0800","caller":"myBluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-10-30T11:35:37.131+0800","caller":"myBluebell/main.go:37","msg":"logger initialized successfully..."}
+{"level":"ERROR","time":"2023-10-30T11:35:43.262+0800","caller":"controller/user.go:27","msg":"singup with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'required' tag"}
+{"level":"INFO","time":"2023-10-30T11:35:43.263+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0005025}
+{"level":"INFO","time":"2023-10-30T11:38:08.390+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-10-30T11:38:14.675+0800","caller":"myBluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-10-30T11:38:14.676+0800","caller":"myBluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-10-30T11:38:17.278+0800","caller":"myBluebell/main.go:37","msg":"logger initialized successfully..."}
+{"level":"ERROR","time":"2023-10-30T11:38:22.941+0800","caller":"controller/user.go:27","msg":"singup with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2023-10-30T11:38:22.941+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0009994}
+{"level":"DEBUG","time":"2023-10-30T14:30:27.095+0800","caller":"myBluebell/main.go:37","msg":"logger initialized successfully..."}
+{"level":"INFO","time":"2023-10-30T14:31:37.345+0800","caller":"myBluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-10-30T14:31:37.345+0800","caller":"myBluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-10-30T14:31:49.384+0800","caller":"myBluebell/main.go:37","msg":"logger initialized successfully..."}
+{"level":"ERROR","time":"2023-10-30T14:32:00.073+0800","caller":"controller/user.go:27","msg":"singup with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2023-10-30T14:32:00.073+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0002108}
+{"level":"ERROR","time":"2023-10-30T14:32:12.630+0800","caller":"controller/user.go:27","msg":"singup with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'required' tag"}
+{"level":"INFO","time":"2023-10-30T14:32:12.630+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0002422}
+{"level":"INFO","time":"2023-10-30T14:32:24.431+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0042826}
+{"level":"INFO","time":"2023-10-30T14:34:13.260+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0032994}
+{"level":"INFO","time":"2023-10-30T14:34:18.640+0800","caller":"myBluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-10-30T14:34:18.640+0800","caller":"myBluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-10-30T14:34:21.561+0800","caller":"myBluebell/main.go:37","msg":"logger initialized successfully..."}
+{"level":"INFO","time":"2023-10-30T14:35:27.530+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.000968}
+{"level":"INFO","time":"2023-10-30T14:35:44.178+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0010989}
+{"level":"INFO","time":"2023-10-30T14:39:32.328+0800","caller":"myBluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-10-30T14:39:32.328+0800","caller":"myBluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2023-10-30T14:39:35.976+0800","caller":"myBluebell/main.go:37","msg":"logger initialized successfully..."}
+{"level":"ERROR","time":"2023-10-30T14:39:55.517+0800","caller":"controller/user.go:27","msg":"singup with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'required' tag"}
+{"level":"INFO","time":"2023-10-30T14:39:55.517+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0002383}
+{"level":"INFO","time":"2023-10-30T14:40:00.435+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.008788}
+{"level":"INFO","time":"2023-10-30T14:40:57.443+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.006115}
+{"level":"INFO","time":"2023-10-30T14:40:58.854+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.005451}
+{"level":"INFO","time":"2023-10-30T14:40:59.610+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0065995}
+{"level":"INFO","time":"2023-10-30T14:41:00.155+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0045273}
+{"level":"INFO","time":"2023-10-30T14:41:01.349+0800","caller":"logger/logger.go:94","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.33.0","errors":"","cost":0.0057351}
+{"level":"INFO","time":"2023-10-30T14:43:57.325+0800","caller":"myBluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-10-30T14:43:57.325+0800","caller":"myBluebell/main.go:99","msg":"Server exiting"}

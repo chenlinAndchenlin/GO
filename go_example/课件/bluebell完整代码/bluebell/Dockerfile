@@ -25,10 +25,10 @@ RUN go build -o bluebell_app .
 ###################
 FROM debian:stretch-slim
 
-COPY ./wait-for.sh /
-COPY ./templates /templates
-COPY ./static /static
-COPY ./conf /conf
+COPY wait-for.sh /
+COPY templates /templates
+COPY static /static
+COPY conf /conf
 
 # 从builder镜像中把/dist/app 拷贝到当前目录
 COPY --from=builder /build/bluebell_app /

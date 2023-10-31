@@ -3,12 +3,14 @@ package main
 import (
 	"context"
 	"fmt"
-	"gin_demo/web_app/dao/mysql"
-	"gin_demo/web_app/dao/redis"
-	"gin_demo/web_app/logger"
-	"gin_demo/web_app/routes"
-	"gin_demo/web_app/settings"
 	"log"
+	"myBluebell/controller"
+	"myBluebell/dao/mysql"
+	"myBluebell/dao/redis"
+	"myBluebell/logger"
+	"myBluebell/pkg/snowflake"
+	"myBluebell/router"
+	"myBluebell/settings"
 	"net/http"
 	"os"
 	"os/signal"
@@ -38,6 +40,8 @@ func main() {
 	if err := mysql.Init(); err != nil {
 		fmt.Println("init mysql failed: ", err)
 		return
+	} else {
+		fmt.Println("mysql initialized successfully")
 	}
 	defer mysql.Close()
 
@@ -47,8 +51,21 @@ func main() {
 		return
 	}
 	defer redis.Close()
+	//初始化id 雪花算法
+	if err := snowflake.Init(settings.Conf.StartTime, settings.Conf.MachineID); err != nil {
+		fmt.Println("init snowflake failed: ", err)
+		return
+	} else {
+		fmt.Println("snowflake initialized successfully")
+	}
+	//初始化gin框架内置的翻译引擎
+	if err := controller.InitTrans("zh"); err != nil {
+		fmt.Println("init trans failed,err:", err)
+		return
+	}
+
 	//5.注册路由
-	r := routes.Setup()
+	r := router.SetupRoute()
 	srv := &http.Server{
 		Addr: ":9090",
 		//Addr:    fmt.Sprintf("%d", viper.GetInt("app.ports")),

@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"gin_demo/web_app/settings"
+	"myBluebell/settings"
 	"net"
 	"net/http"
 	"net/http/httputil"
