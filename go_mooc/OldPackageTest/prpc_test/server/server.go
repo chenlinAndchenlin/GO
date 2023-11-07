@@ -1,7 +1,7 @@
 package main
 
 import (
-	"OldPackageTest/prpc_test/proto"
+	"OldPackageTest/metadata_grpc/proto"
 	"context"
 	"google.golang.org/grpc"
 	"net"

@@ -1,0 +1,7 @@
+syntax ="proto3";
+option go_package="./;proto";
+import "base.proto";
+
+service Greeter{
+  rpc Ping(Empty) returns (Pong);
+}
