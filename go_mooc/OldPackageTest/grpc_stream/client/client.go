@@ -8,18 +8,16 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/credentials/insecure"
-
 	"google.golang.org/grpc"
 )
 
 //	type GreeterClient interface {
-//		GetStream(ctx context.Context, in *StreamReqData, opts ...grpc.CallOption) (Greeter_GetStreamClient, error)
+//		GetStream(ctx context.Co'ntext, in *StreamReqData, opts ...grpc.CallOption) (Greeter_GetStreamClient, error)
 //		PutStream(ctx context.Context, opts ...grpc.CallOption) (Greeter_PutStreamClient, error)
 //		AllStream(ctx context.Context, opts ...grpc.CallOption) (Greeter_AllStreamClient, error)
 //	}
 func main() {
-	conn, err := grpc.Dial("localhost:50052", grpc.WithTransportCredentials(insecure.NewCredentials()))
+	conn, err := grpc.Dial("localhost:50052", grpc.WithInsecure())
 	if err != nil {
 		panic(err)
 	}
