@@ -7,9 +7,9 @@ import (
 func main() {
 	//map是一个key(索引)和value(值)的无序集合， 主要是查询方便 o(1)
 	var courseMap = map[string]string{
-		"go":"go工程师",
-		"grpc":"grpc入门",
-		"gin":"gin深入理解",
+		"go":        "go工程师",
+		"grpc":      "grpc入门",
+		"gin_hello": "gin深入理解",
 	}
 	//
 	////取值
@@ -36,7 +36,7 @@ func main() {
 
 	if _, ok := courseMap["java"]; !ok {
 		fmt.Println("not in")
-	}else {
+	} else {
 		fmt.Println("in")
 	}
 

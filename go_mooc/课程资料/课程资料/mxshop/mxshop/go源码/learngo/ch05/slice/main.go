@@ -10,16 +10,16 @@ func main() {
 	//这个方法很特别， 第一次用很头疼， 原理
 	//courses = append(courses, "go")
 	//courses = append(courses, "grpc")
-	//courses = append(courses, "gin")
+	//courses = append(courses, "gin_hello")
 	//
 	//fmt.Println(courses[1])
 	//
 	////切片的初始化 3种：1：从数组直接创建 2：使用string{} 3: make
-	//allCourses := [5]string{"go", "grpc", "gin", "mysql", "elasticsearch"}
+	//allCourses := [5]string{"go", "grpc", "gin_hello", "mysql", "elasticsearch"}
 	//courseSlice := allCourses[0:len(allCourses)] //左闭右开 [) python
 	//fmt.Println(courseSlice)
 
-	//courseSlice := []string{"go", "grpc", "gin", "mysql", "elasticsearch"}
+	//courseSlice := []string{"go", "grpc", "gin_hello", "mysql", "elasticsearch"}
 
 	////make 函数
 	//allCourses2 := make([]string, 3)
@@ -47,13 +47,13 @@ func main() {
 	//fmt.Println(courseSlice[:])
 
 	//courseSlice := []string{"go", "grpc"}
-	//courseSlice2 := []string{"mysql", "es", "gin"}
+	//courseSlice2 := []string{"mysql", "es", "gin_hello"}
 	//courseSlice = append(courseSlice, courseSlice2[1:]...)
 	//
 	////如何删除slice中的元素： 比较麻烦
 	//fmt.Println(courseSlice)
 
-	courseSlice := []string{"go", "grpc", "mysql", "es", "gin"}
+	courseSlice := []string{"go", "grpc", "mysql", "es", "gin_hello"}
 	myslice := append(courseSlice[:2], courseSlice[3:]...)
 	fmt.Println(myslice)
 
@@ -74,4 +74,3 @@ func main() {
 	fmt.Println(courseSliceCopy2)
 	fmt.Println(courseSliceCopy)
 }
-

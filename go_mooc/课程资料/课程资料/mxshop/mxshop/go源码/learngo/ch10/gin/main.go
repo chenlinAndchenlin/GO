@@ -1,17 +1,18 @@
 package main
+
 //
 //import (
 //	"net/http"
 //
-//	"github.com/gin-gonic/gin"
+//	"github.com/gin_hello-gonic/gin_hello"
 //)
 //
 ////go modules 添加依赖 删除未使用的依赖项
 ////go get, go mod ? go install
 //func main() {
-//	r := gin.Default()
-//	r.GET("/ping", func(c *gin.Context) {
-//		c.JSON(http.StatusOK, gin.H{
+//	r := gin_hello.Default()
+//	r.GET("/ping", func(c *gin_hello.Context) {
+//		c.JSON(http.StatusOK, gin_hello.H{
 //			"message": "pong",
 //		})
 //	})
@@ -98,7 +99,7 @@ func main() {
 
 	// Read
 	var product Product
-	db.First(&product, 1) // 根据整型主键查找
+	db.First(&product, 1)                 // 根据整型主键查找
 	db.First(&product, "code = ?", "D42") // 查找 code 字段值为 D42 的记录
 
 	// Update - 将 product 的 price 更新为 200

@@ -11,19 +11,19 @@ func main() {
 	//
 	//courses1[0] = "go"
 	//courses1[1] = "grpc"
-	//courses1[2] = "gin"
+	//courses1[2] = "gin_hello"
 
 	//fmt.Println(courses1)
 	//fmt.Printf("%T\r\n", courses1)
 	//fmt.Printf("%T", courses2)
 
 	////数组的初始化 1
-	//courses1 := [3]string{"go", "grpc", "gin"}
+	//courses1 := [3]string{"go", "grpc", "gin_hello"}
 	//for _, value := range courses1 {
 	//	fmt.Println(value)
 	//}
 	//数组的初始化 2
-	//courses2 := [3]string{2:"gin"}
+	//courses2 := [3]string{2:"gin_hello"}
 	//for _, value := range courses2 {
 	//	fmt.Println(value)
 	//}
@@ -49,7 +49,7 @@ func main() {
 	var courseInfo [3][4]string
 	courseInfo[0] = [4]string{"go", "1h", "bobby", "go体系课"}
 	courseInfo[1] = [4]string{"grpc", "2h", "bobby2", "grpc入门"}
-	courseInfo[2] = [4]string{"gin", "1.5h", "bobby3", "gin高级开发"}
+	courseInfo[2] = [4]string{"gin_hello", "1.5h", "bobby3", "gin高级开发"}
 
 	fmt.Println(len(courseInfo))
 

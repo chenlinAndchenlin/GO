@@ -4,8 +4,8 @@
 package main
 
 //func main() {
-//	router := gin.Default()
-//	router.GET("/", func(c *gin.Context) {
+//	router := gin_hello.Default()
+//	router.GET("/", func(c *gin_hello.Context) {
 //		time.Sleep(5 * time.Second)
 //		c.String(http.StatusOK, "Welcome Gin Server")
 //	})

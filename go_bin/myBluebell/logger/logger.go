@@ -72,11 +72,11 @@ func getLogWriter(filename string, maxSize, maxBackup, maxAge int) zapcore.Write
 //	func main() {
 //		InitLogger()
 //		defer sugarLogger.Sync()
-//		r := gin.New()
+//		r := gin_hello.New()
 //		r.Use(GinLogger(logger), GinRecovery(logger, true))
 //
-//		//r := gin.Default()
-//		r.GET("/hello", func(c *gin.Context) {
+//		//r := gin_hello.Default()
+//		r.GET("/hello", func(c *gin_hello.Context) {
 //			c.String(http.StatusOK, "hello liwenzhou.com!")
 //		})
 //		r.Run(":9090")

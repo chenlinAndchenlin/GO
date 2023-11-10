@@ -114,7 +114,7 @@ func GetPostListHandler2(c *gin.Context) {
 }
 
 // 根据社区去查询帖子列表
-//func GetCommunityPostListHandler(c *gin.Context) {
+//func GetCommunityPostListHandler(c *gin_hello.Context) {
 //	// 初始化结构体时指定初始参数
 //	p := &models.ParamCommunityPostList{
 //		ParamPostList: &models.ParamPostList{

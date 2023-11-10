@@ -2,6 +2,10 @@ package main
 
 import (
 	"GoStart/telemetry/ch03/server/model"
+	"log"
+	"os"
+	"time"
+
 	"github.com/gin-gonic/gin"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/attribute"
@@ -13,9 +17,6 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
-	"log"
-	"os"
-	"time"
 
 	semconv "go.opentelemetry.io/otel/semconv/v1.12.0"
 
@@ -89,7 +90,7 @@ func Server(c *gin.Context) {
 	c.JSON(200, gin.H{})
 }
 
-//func Server(c *gin.Context) {
+//func Server(c *gin_hello.Context) {
 //
 //	////负责span的抽取和生成
 //	//us, _ := c.Value("trace").(string)
@@ -123,7 +124,7 @@ func Server(c *gin.Context) {
 //	_, span := tr.Start(sct, "server")
 //	time.Sleep(600 * time.Millisecond)
 //	span.End()
-//	c.JSON(200, gin.H{})
+//	c.JSON(200, gin_hello.H{})
 //}
 
 func main() {

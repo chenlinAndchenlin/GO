@@ -119,7 +119,7 @@ func main() {
 	r := gin.New()
 	r.Use(GinLogger(logger), GinRecovery(logger, true))
 
-	//r := gin.Default()
+	//r := gin_hello.Default()
 	r.GET("/hello", func(c *gin.Context) {
 		c.String(http.StatusOK, "hello liwenzhou.com!")
 	})

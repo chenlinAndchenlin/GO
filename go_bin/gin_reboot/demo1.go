@@ -13,7 +13,7 @@ func main() {
 	router := gin.Default()
 	router.GET("/", func(c *gin.Context) {
 		time.Sleep(5 * time.Second)
-		c.String(http.StatusOK, "hello gin!")
+		c.String(http.StatusOK, "hello gin_hello!")
 	})
 	// 默认endless服务器会监听下列信号：
 	// syscall.SIGHUP，syscall.SIGUSR1，syscall.SIGUSR2，syscall.SIGINT，syscall.SIGTERM和syscall.SIGTSTP

@@ -6,8 +6,8 @@ import (
 	"bluebell/middlewares"
 	"net/http"
 
-	ginSwagger "github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
+	ginSwagger "github.com/swaggo/gin_hello-swagger"
 
 	_ "bluebell/docs"
 

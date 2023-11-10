@@ -10,10 +10,10 @@ var tpl = `
 type {{.Name}}HttpServer struct {
 	server {{$.Name}}Server
 
-	router gin.IRouter
+	router gin_hello.IRouter
 }
 
-func Register{{.Name}}HttpServer(server {{.Name}}Server, router gin.IRouter) {
+func Register{{.Name}}HttpServer(server {{.Name}}Server, router gin_hello.IRouter) {
 	//我现在想用gin.Default,如果开发中我想使用qit
 	g := &{{.Name}}HttpServer{server: server, router: router}
 	g.RegisterService()
@@ -21,16 +21,16 @@ func Register{{.Name}}HttpServer(server {{.Name}}Server, router gin.IRouter) {
 
 
 {{ range .Methods }}
-func (g *{{ $.Name }}HttpServer) {{ .HandlerName }}(c *gin.Context) {
+func (g *{{ $.Name }}HttpServer) {{ .HandlerName }}(c *gin_hello.Context) {
 	var in {{ .Request }}
 	if err := c.BindJSON(&in); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		c.JSON(http.StatusBadRequest, gin_hello.H{"error": err.Error()})
 		return
 	}
 
 	out, err := g.server.{{ .Name }}(c, &in)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		c.JSON(http.StatusInternalServerError, gin_hello.H{"error": err.Error()})
 		return
 	}
 	c.JSON(http.StatusOK, out)
