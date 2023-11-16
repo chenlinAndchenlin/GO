@@ -47,16 +47,16 @@ type RedisConfig struct {
 // 利用viper管理配置文件
 func Init() (err error) {
 	viper.SetConfigFile("config.yaml")
-	//viper.SetConfigName("config")
-	//viper.SetConfigType("yaml")
+	//viper_test.SetConfigName("config")
+	//viper_test.SetConfigType("yaml")
 	viper.AddConfigPath(".")
 	err = viper.ReadInConfig()
 	if err != nil {
-		println("viper.ReadConfig failed,error:", err)
+		println("viper_test.ReadConfig failed,error:", err)
 		return err
 	}
 	if err = viper.Unmarshal(Conf); err != nil {
-		fmt.Println("viper.Unmarshal failed,error:", err)
+		fmt.Println("viper_test.Unmarshal failed,error:", err)
 	} else {
 		fmt.Println(Conf)
 	}
@@ -64,7 +64,7 @@ func Init() (err error) {
 	viper.OnConfigChange(func(in fsnotify.Event) {
 		fmt.Println("配置文件修改了，，，，")
 		if err = viper.Unmarshal(Conf); err != nil {
-			fmt.Println("viper.Unmarshal failed,error:", err)
+			fmt.Println("viper_test.Unmarshal failed,error:", err)
 		} else {
 			fmt.Println(Conf)
 		}

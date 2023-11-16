@@ -23,10 +23,10 @@ import (
 
 func Init(cfg *settings.LogConfig) (err error) {
 	//writeSyncer := getLogWriter(
-	//	viper.GetString("log.filenames"),
-	//	viper.GetInt("log.max_size"),
-	//	viper.GetInt("log.max_backups"),
-	//	viper.GetInt("log.max_age"))
+	//	viper_test.GetString("log.filenames"),
+	//	viper_test.GetInt("log.max_size"),
+	//	viper_test.GetInt("log.max_backups"),
+	//	viper_test.GetInt("log.max_age"))
 	writeSyncer := getLogWriter(
 		cfg.Filename,
 		cfg.MaxSize,

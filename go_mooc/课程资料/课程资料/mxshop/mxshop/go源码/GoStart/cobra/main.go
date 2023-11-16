@@ -14,7 +14,7 @@ func main() {
 	//启动的时候可以自动生成提示 --help 一些参数可以映射到我们的代码的config中 yaml中的配置是否可以自动映射到config
 	//启动的是否可以支持配置文件的检验
 
-	//cobra, pflag, viper 同一个作者， 这三者的集成很简单
+	//cobra, pflag, viper_test 同一个作者， 这三者的集成很简单
 
 	//支持help export
 	flag.Parse()

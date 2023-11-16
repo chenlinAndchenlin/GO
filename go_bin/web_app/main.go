@@ -51,7 +51,7 @@ func main() {
 	r := routes.Setup()
 	srv := &http.Server{
 		Addr: ":9090",
-		//Addr:    fmt.Sprintf("%d", viper.GetInt("app.ports")),
+		//Addr:    fmt.Sprintf("%d", viper_test.GetInt("app.ports")),
 		Handler: r,
 	}
 

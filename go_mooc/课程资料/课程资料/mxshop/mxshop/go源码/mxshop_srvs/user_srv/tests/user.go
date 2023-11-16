@@ -12,7 +12,7 @@ import (
 var userClient proto.UserClient
 var conn *grpc.ClientConn
 
-func Init(){
+func Init() {
 	var err error
 	conn, err = grpc.Dial("127.0.0.1:50051", grpc.WithInsecure())
 	if err != nil {
@@ -21,7 +21,7 @@ func Init(){
 	userClient = proto.NewUserClient(conn)
 }
 
-func TestGetUserList(){
+func TestGetUserList() {
 	rsp, err := userClient.GetUserList(context.Background(), &proto.PageInfo{
 		Pn:    1,
 		PSize: 5,
@@ -42,11 +42,11 @@ func TestGetUserList(){
 	}
 }
 
-func TestCreateUser(){
-	for i := 0; i<10; i++ {
+func TestCreateUser() {
+	for i := 0; i < 10; i++ {
 		rsp, err := userClient.CreateUser(context.Background(), &proto.CreateUserInfo{
-			NickName: fmt.Sprintf("bobby%d",i),
-			Mobile: fmt.Sprintf("1878222222%d",i),
+			NickName: fmt.Sprintf("bobby%d", i),
+			Mobile:   fmt.Sprintf("1878222222%d", i),
 			PassWord: "admin123",
 		})
 		if err != nil {
