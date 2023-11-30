@@ -1,6 +1,0 @@
-{"level":"info","ts":1699926303.134737,"caller":"zap_test/main.go:24","msg":"failed to connect:","url:":"www.google.com","attempting to connect":3}
-{"level":"info","ts":1699926303.134737,"caller":"zap_test/main.go:27","msg":"Failed to fetch URL: www.google.com"}
-{"level":"info","ts":1699926406.3159463,"caller":"zap_test/main.go:26","msg":"failed to connect:","url:":"www.google.com","attempting to connect":3}
-{"level":"info","ts":1699926406.3159463,"caller":"zap_test/main.go:29","msg":"Failed to fetch URL: www.google.com"}
-{"level":"info","ts":1699926447.4873738,"caller":"zap_test/main.go:26","msg":"failed to connect:","url:":"www.google.com","attempting to connect":3}
-{"level":"info","ts":1699926447.4873738,"caller":"zap_test/main.go:29","msg":"Failed to fetch URL: www.google.com"}

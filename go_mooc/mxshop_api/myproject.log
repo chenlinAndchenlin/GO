@@ -1,2 +1,0 @@
-{"level":"info","ts":1699926242.170031,"caller":"zap_test/main.go:24","msg":"failed to connect:","url:":"www.google.com","attempting to connect":3}
-{"level":"info","ts":1699926242.170031,"caller":"zap_test/main.go:27","msg":"Failed to fetch URL: www.google.com"}
